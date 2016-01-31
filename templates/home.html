@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src={% static 'js/bootstrap.min.js' %}></script>
+    <meta charset="UTF-8">
+    <title>NALIVATOR-9000 | Main page</title>
+</head>
+<body>
+<h1></h1>
+<div class="container-fluid">
+<div class="row">
+{% for i in current_pump_set %}
+    <div class="col-xs-4">{{ i }}</div>
+{% endfor %}
+</div>
+ </div>
+
+</body>
+</html>
